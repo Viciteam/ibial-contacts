@@ -17,6 +17,7 @@ class CreateCrmContactsTable extends Migration
             $table->bigIncrements('id');
             $table->string('user_id');
             $table->string('email')->unique();
+            $table->string('address');
             $table->string('work_phone')->nullable();
             $table->string('mobile_phone');
             $table->string('home_phone')->nullable();
