@@ -20,7 +20,7 @@ class CreateCrmContactsTable extends Migration
             $table->string('work_phone')->nullable();
             $table->string('mobile_phone');
             $table->string('home_phone')->nullable();
-            $table->string('job_title');
+            $table->string('job_title')->nullable();
             $table->string('website')->nullable();
             $table->string('business')->nullable();
             $table->timestamps();
