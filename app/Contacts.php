@@ -10,8 +10,9 @@ class Contacts extends Model
 
     protected $fillable = [
         'user_id',
-        'email',
-        'address',
+        'contact_name',
+        'contact_email',
+        'contact_address',
         'work_phone',
         'mobile_phone',
         'home_phone',

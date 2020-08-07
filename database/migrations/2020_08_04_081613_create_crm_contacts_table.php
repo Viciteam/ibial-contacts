@@ -16,8 +16,9 @@ class CreateCrmContactsTable extends Migration
         Schema::create('crm_contacts', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('user_id');
-            $table->string('email')->unique();
-            $table->string('address');
+            $table->string('contact_name');
+            $table->string('contact_email')->unique();
+            $table->string('contact_address');
             $table->string('work_phone')->nullable();
             $table->string('mobile_phone');
             $table->string('home_phone')->nullable();
