@@ -31,3 +31,16 @@ Route::get('dealstages', 'Deals\DealStagesController@dealstages');
 Route::post('dealstages', 'Deals\DealStagesController@register');
 Route::delete('dealstages/{id}', 'Deals\DealStagesController@deleteDealStage');
 Route::put('dealstages/{id}', 'Deals\DealStagesController@updateStage');
+
+Route::post('projects', 'Projects\ProjectController@register');
+Route::get('projects/{user_id}', 'Projects\ProjectController@userProjects');
+Route::delete('projects/{id}', 'Projects\ProjectController@deleteProject');
+Route::put('projects/{id}', 'Projects\ProjectController@updateProject');
+
+Route::post('projectstage', 'Projects\ProjectStagesController@register');
+Route::delete('projectstage/{id}', 'Projects\ProjectStagesController@deleteProjectStage');
+Route::put('projectstage/{id}', 'Projects\ProjectStagesController@updateProjectStage');
+
+Route::post('projectitems', 'Projects\ProjectItemsController@register');
+Route::delete('projectitems/{id}', 'Projects\ProjectItemsController@deleteProjectItems');
+Route::put('projectitems/{id}', 'Projects\ProjectItemsController@updateProjectItems');
