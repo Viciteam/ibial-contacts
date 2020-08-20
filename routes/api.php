@@ -44,3 +44,8 @@ Route::put('projectstage/{id}', 'Projects\ProjectStagesController@updateProjectS
 Route::post('projectitems', 'Projects\ProjectItemsController@register');
 Route::delete('projectitems/{id}', 'Projects\ProjectItemsController@deleteProjectItems');
 Route::put('projectitems/{id}', 'Projects\ProjectItemsController@updateProjectItems');
+
+Route::post('page', 'Page\PageBuilderController@register');
+Route::get('page/{user_id}', 'Page\PageBuilderController@pagebuilders');
+Route::delete('page/{id}', 'Page\PageBuilderController@deletePage');
+Route::put('page/{id}', 'Page\PageBuilderController@updatePage');

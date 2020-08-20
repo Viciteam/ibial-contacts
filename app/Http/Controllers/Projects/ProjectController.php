@@ -53,7 +53,7 @@ class ProjectController extends Controller
             return response()->json(['status' => 'error','message' => 'Record not found...'], 404);     
         }
         $project->update($request->all());
-        return response()->json(['status' => 'success','dealstage' => $project], 200);
+        return response()->json(['status' => 'success','project' => $project], 200);
     }
 
 }
