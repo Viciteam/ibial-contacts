@@ -9,6 +9,10 @@ use Validator;
 
 class ContactsController extends Controller
 {
+    public function allContacts(){
+        return response()->json(Contacts::get(), 200);
+    }
+
     public function contacts($userid){
         $contacts = Contacts::where('user_id', $userid)->get();
         if($contacts->count() === 0 ){
