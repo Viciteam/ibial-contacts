@@ -24,10 +24,10 @@ class ContactsController extends Controller
     public function register(Request $request){
         $rules = [
             'user_id' => 'required',
-            'contact_name' => 'required',
+            'contact_fname' => 'required',
+            'contact_lname' => 'required',
             'contact_email'   => 'required',
-            'mobile_phone' => 'required',
-            'job_title' => 'required'
+            'mobile_phone' => 'required'
         ];
         $validator = Validator::make($request->all(), $rules);
         if($validator->fails()){
