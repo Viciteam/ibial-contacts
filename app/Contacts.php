@@ -14,6 +14,7 @@ class Contacts extends Model
         'contact_lname',
         'contact_email',
         'contact_address',
+        'contact_source',
         'work_phone',
         'mobile_phone',
         'home_phone',

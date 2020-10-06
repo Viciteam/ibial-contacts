@@ -20,6 +20,7 @@ class CreateCrmContactsTable extends Migration
             $table->string('contact_lname');
             $table->string('contact_email')->unique();
             $table->string('contact_address');
+            $table->string('contact_source')->nullable();
             $table->string('work_phone')->nullable();
             $table->string('mobile_phone');
             $table->string('home_phone')->nullable();
